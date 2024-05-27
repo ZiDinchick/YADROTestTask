@@ -1,0 +1,95 @@
+.authorization{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+
+}
+.sett__authorization{
+    padding-bottom: 2rem;
+}
+
+.container__authorization{
+    background: #fff;
+    border-radius: 0.8rem;
+    width: 520px;
+}
+
+.form__authorization{
+    padding: 40px 60px 40px 60px;
+    display: flex;
+    flex-direction: column;
+}
+.btn__sets{
+    display: none;
+}
+.label__btn__sets{
+    color: #F4F6FB;
+    font-weight: 600;
+    font-size: 20;
+    padding: 1rem 1rem 0.5rem;
+    cursor: pointer;
+
+}
+
+.btn__sets[type=radio]:checked + label{
+    border-bottom: 4px solid #F4F6FB;
+}
+
+.h2{
+    font-weight: 600;
+    color: #222;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+h3{
+    font-weight: 600;
+    color: #222;
+    font-size: 14px;
+    padding-bottom: 0.3rem;
+}
+.text{
+    font-weight: 400;
+    color: #999;
+}
+.forma__input{
+    border: none;
+    background: #F4F6FB;
+    outline: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 19px 10px 15px 20px;
+    color: #222;
+    margin-bottom: 1rem;
+    &::placeholder{
+        color: #D3D4ED;
+    }
+
+    &:focus{
+        background: #E7EBF5;
+    }
+}
+
+.img__star{
+    display: flex;
+    justify-content: end;
+}
+.star{
+    position: absolute;
+    padding: 22px 20px;
+}
+
+.btn__send{
+    font-weight: 600;
+    padding: 13px;
+    color: white;
+    background-color: #1E22AA;
+    border: none;
+    border-radius: 5px;
+    margin: 0.8rem 0;
+    
+    &:hover{ 
+        background-color: #090C7C;
+        cursor: pointer;
+    }
+}

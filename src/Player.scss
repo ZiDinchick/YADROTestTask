@@ -1,0 +1,187 @@
+@import "./assets/style/utils/index.scss";
+
+.container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 470px;
+    margin-top: calc(50% - 105px - 470px);
+}
+
+.video{
+    min-width: 750px;
+    background-color: antiquewhite;
+}
+
+.chats{
+    display: flex;
+    flex-direction: column;
+    background-color: $bgChat;
+    max-width: 350px;
+    padding: 20px
+    
+}
+
+.chat__header{
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    
+}
+.btn__set{
+    display: none;
+}
+.label__btn__text{
+    font-size: 18px;
+    color: white;
+    margin-right: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.label__btn__text:hover{
+color: darken($color: white, $amount: 10%);
+}
+input[type=radio]:checked + label{
+    color: #E0E0E0;
+    border-bottom: 4px solid $BtnColor;
+    font-weight: 600;
+}
+
+.chat__top{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;      
+    scrollbar-width: thin;
+    scrollbar-color: #2F2F2F #191919;
+}
+
+.massage{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.massage:last-child{
+    margin-bottom: 0;
+}
+.name{
+    color: $chatColorTitle;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text{
+    color: $chatColorText;
+    margin-right: 10px;
+}
+.icon__like{
+	border: none;
+	background: none;
+}
+
+.like{
+    display: flex;
+    align-self: flex-end;
+    min-width: 65px;
+}
+
+.kol__like{
+    align-self: center;
+    margin-left: 2px;
+    color: #999999;
+}
+.activ__kol__like{
+    align-self: center;
+    margin-left: 2px;
+    color: #FFFFFF;
+}
+.block__massage{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $chatColor;
+    border-radius: 0.6rem;
+    margin-bottom: 0.2rem;
+    margin: 0.2rem;
+
+}
+
+
+
+.chat__footer{
+    padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+    
+}
+
+.input__text{
+    resize:none ;
+    color: #cccccc;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    padding: 1rem;
+    outline: none;
+}
+.input__text::placeholder{
+    color: #999999;
+}
+
+.smile{
+    position: relative;
+}
+.smile__logo{
+    display: flex;
+    justify-content: end;
+}
+.btn__smile{
+    display: flex;
+    border: none;
+    background: none;
+    position: absolute;
+    padding: 1rem;
+}
+
+.name__edit{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.chat__name__edit{
+    display: flex;
+    justify-content: space-between;
+    color:#999999;
+}
+.chat__name{
+    padding-right: 0.6rem;
+}
+.btn__name__edit{
+    border: 0;
+    background: none;
+    color: #0007FF;
+    text-decoration: underline;
+}
+.btn__name__edit:hover{
+    color: #fff;
+}
+.btn__massage{
+    font-weight: 600;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: $BtnColor;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn__massage:hover{
+    background-color: $btnHoverColor;
+    cursor: pointer;
+}
+
+

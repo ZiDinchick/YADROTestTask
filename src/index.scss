@@ -1,0 +1,16 @@
+@import "./assets/style/utils/index.scss";
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('./assets/fonts/proxima_nova_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./assets/fonts/proxima_nova_regular.ttf') format('embedded-opentype'), /* IE < 9 */
+		url('./assets/fonts/proxima_nova_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./assets/fonts/proxima_nova_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./assets/fonts/proxima_nova_regular.svg') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body{
+	font-family: $MainFont;
+    background: url(./assets/image/yadro_bg4.png)no-repeat center center fixed;
+	background-size: cover;
+}
